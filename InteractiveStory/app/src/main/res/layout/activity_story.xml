@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.daryao.interactivestory.ui.StoryActivity"
+                android:background="@android:color/white">
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/storyImageView"
+        android:src="@drawable/page0"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:contentDescription="you arrive to Red planet"
+        android:adjustViewBounds="true"
+        android:layout_alignParentLeft="true"
+        android:cropToPadding="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/storyTextView"
+        android:layout_below="@+id/storyImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:lineSpacingMultiplier="1.2"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop - investigate!!"
+        android:id="@+id/choiceButton2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/white"
+        android:textColor="#3a8aec"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue Home to Earth"
+        android:id="@+id/choiceButton1"
+        android:layout_above="@+id/choiceButton2"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:textColor="#3a8aec"/>
+</RelativeLayout>
