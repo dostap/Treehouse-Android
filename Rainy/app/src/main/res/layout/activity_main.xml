@@ -5,10 +5,8 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:paddingBottom="@dimen/activity_vertical_margin"
                 tools:context=".MainActivity"
-                android:background="#0fa11d"
-                android:backgroundTint="@android:color/holo_purple"
+                android:background="@drawable/bg_gradient"
     >
 
     <TextView
@@ -159,5 +157,36 @@
         android:layout_alignLeft="@+id/refreshImageView"
         android:layout_alignStart="@+id/refreshImageView"
         android:layout_alignBottom="@+id/refreshImageView"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HOURLY"
+            android:id="@+id/hourlyButton"
+            android:layout_weight="1"
+            android:background="#40ffffff"
+            android:textColor="#ffffff"
+            android:layout_marginRight="1dp"
+            android:paddingBottom="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DAILY"
+            android:id="@+id/dailyButton"
+            android:layout_weight="1"
+            android:background="#40ffffff"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:paddingBottom="5dp"/>
+    </LinearLayout>
 
 </RelativeLayout>
